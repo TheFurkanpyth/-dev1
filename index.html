@@ -78,7 +78,10 @@
             cursor: pointer;
         }
 
-        #page-1 img {
+        #page-2 img,
+        #page-4 img,
+        #page-3 img,
+        #page-5 img {
             max-width: 100%;
             max-height: 100vh;
         }
@@ -114,6 +117,15 @@
         .slideInFromLeft {
             animation-name: slideInFromLeft;
         }
+
+        .stock-symbol {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            background-image: url('https://img.icons8.com/ios-filled/50/000000/ak-47.png');
+            background-size: cover;
+            vertical-align: middle;
+        }
     </style>
 </head>
 <body>
@@ -132,112 +144,127 @@
             <p>Ankara Medipol Üniversitesi(2021-2025) <br>
              <p>-Yönetim Bilişim Sistemleri Uzmanlığı-</p><br>
             İzmir Aliağa Anadolu Lisesi (2016-2020)</p>
-            <h2>Çalışma yerleri</h2>
+           
+             <h2>Çalışma yerleri</h2>
+             <p>Ceo / FMC SAVUNMA / (2024-20XX) </p>
             <p id="working">Bakım onarım test uzmanı/Honda Efe plaza / (2023- 2024)</p>
             <p>Kurye / Domino's Pizza / (2022-2023) </p>
             <p>Oyuncu / EC Medya / (2021-2022) </p>
             <p>Mağaza Müdürü / Koza Optik / (2020-2021) </p>
-            <h2>Hobilerim</h2>
+            
+             <h2>Hobilerim</h2>
             <p id="hobbyes">Savunma sanayi çalışmaları hazırlamak</p>
             <p>Rap Müziği Yapmak <br>
              <p>Video tasarımı</p>
              <p>Görsel grafikler çizmek</p><br>
-             <h2>Yazılım dilleri</h2>
-            <p id="language">Python </p>
-            <p>C  <br>
-             <p>Java script  </p>
-              <p>html </p>
-              <p>csss </p>
-             <p></p><br>
-              <h2>Sertifikalar</h2>
-            <p id="certificas">Cyber security Trainee - Akbank </p>
-            <p>Siber Güvenlik Uzmanlığı - Yapı kredi <br>
-             <p>Banka Güvenliğine giriş -Timus Cyber Security </p>
-            <p>Cyber Security Professional - CİSCO </p>
-              
-           
-          
-     
+            <textarea id="comment-1" rows="4" cols="50" placeholder="Yorumunuzu buraya yazınız..."></textarea>
+            <br>
+            <button onclick="submitComment(1)">Yorum Yap</button>
         </section>
-
-        <footer class="linkedin-link">
-            <a href="https://www.linkedin.com/in/e-furkan-sezer-0a80a8220/" target="_blank"> /LinkedIn/</a>
-            <a href="https://www.youtube.com/@ejderline" target="_blank"> Youtube / </a>
-            <a href="https://www.instagram.com/ejder_line/" target="_blank"> İnstagram / </a>
-            <a href="https://open.spotify.com/intl-tr/artist/5txpxDYSL2Ceitbdn20o0R?si=lVhSODPDTt6IXPc0nuPURA" target="_blank"> Spotify / </a>
-        </footer>
-
+        <section id="page-2" class="page-animation">
+            <h2>SARP Otonom silah sistemi</h2>
+            <img src="https://assets.newatlas.com/dims4/default/ebf8686/2147483647/strip/true/crop/5184x3456+0+0/resize/2880x1920!/quality/90/?url=http%3A%2F%2Fnewatlas-brightspot.s3.amazonaws.com%2Farchive%2Fkorea-dodamm-super-aegis-autonomos-robot-gun-turret.JPG" alt="Profil Resmi" id="profile-image">
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/OXj6j1jL5DA" frameborder="0" allowfullscreen></iframe>
+            <p>SARP Turret sistemi kendi içerisindeki ısı ve titreşim sensörleri sayesinde haraket eden her haraketi inceler ve yapay zeka desteği sayesinde düşmanları ve tehdit seviyelerini tespit edip ona göre kullanıcı gerektirmeden hedefi 10 kilometre menzili içerisinde tam 12^den vurabilir Aynı zamanda kullanıcı desteğine açık olan SARP ihtiyaç halinde kullanıcı tarafından kontrol edilebilirken kontrolden çıkma gibi yada dost hedeflere ateş açma riskinin olabilceği bölgelerde atış öncesi onay istiyebilir...</p>
+            <textarea id="comment-2" rows="4" cols="50" placeholder="Yorumunuzu buraya yazınız..."></textarea>
+            <br>
+            <button onclick="submitComment(2)">Yorum Yap</button>
+        </section>
+        <section id="page-3" class="page-animation">
+            <h2>SARP İlk Hedef testimiz</h2>
+            <img src="https://www.turkishdefencenews.com/wp-content/uploads/2020/10/ASELSAN-MUHAFIZ.jpg">
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/QiM1IlJRsdQ" frameborder="0" allowfullscreen></iframe>
+            <p>Tasarlamış olduğumuz SARP Turret bu bağlamda bize çok şey öğretti kendi evladımız gibi geliştirdiğimiz bu silah ilk defa Bakanlıktan onay aldı ve Sahil Güvenliğine monte edildi ve Marmara denizinde yapılan testlerde denizde dahil hedefi sarsıntılarda nokta atışı vurabilceğini ispatlamıştır [Yıl 2023,Aralık]</p>
+            <textarea id="comment-3" rows="4" cols="50" placeholder="Yorumunuzu buraya yazınız..."></textarea>
+            <br>
+            <button onclick="submitComment(3)">Yorum Yap</button>
+        </section>
+        <section id="page-4" class="page-animation">
+            <h2>Proje tanıtım yarışması sürecim ve nasıl birinci olduğumuz.</h2>
+            <img src="https://trthaberstatic.cdn.wp.trt.com.tr/resimler/2158000/bilgi-yarismasi-2159981.jpg">
+            <p>Hayatımdaki ilk kendimi gösterme şansını Hakkari / Çukurca'da Şehit Bilal Soybilgiç Okulunda yapılan Proje sunum yarışmasında yakaladım. Yarışmanın en önemli aşaması olan bir proje üret ve tanıt adlı aşamada hayalim olan bir savunma sanayi silahı çizimimle katıldım ve benden beklenmeyen bir başarı elde edip okulum birinci oldu... (YIL 2020)</p>
+            <textarea id="comment-4" rows="4" cols="50" placeholder="Yorumunuzu buraya yazınız..."></textarea>
+            <br>
+            <button onclick="submitComment(4)">Yorum Yap</button>
+        </section>
+        <section id="page-5" class="page-animation">
+            <h2>FMC CORP Hisse Senedi Verileri</h2>
+            <div id="stock-data">
+                <p>Yükleniyor...</p>
+            </div>
+            <textarea id="comment-5" rows="4" cols="50" placeholder="Yorumunuzu buraya yazınız..."></textarea>
+            <br>
+            <button onclick="submitComment(5)">Yorum Yap</button>
+        </section>
         <div class="buttons">
-            <button onclick="showPage(1)">Eğitimlerim</button>
-            <button id="languageButton" onclick="changeLanguage()">Dil Değiştir</button>
-      
-    <script>
-        var currentPage = 1;
-        var isFullScreen = false;
-        var language = "tr";
+            <button onclick="navigateToPage(1)">Eğitimlerim</button>
+            <button onclick="navigateToPage(2)">SARP Otonom Silah Sistemi</button>
+            <button onclick="navigateToPage(3)">Hedef Testi</button>
+            <button onclick="navigateToPage(4)">Proje Yarışması</button>
+            <button onclick="navigateToPage(5)">Hisse Senedi Verileri</button>
+        </div>
+        <div class="linkedin-link">
+            <a href="https://www.linkedin.com/in/ey%C3%BCp-furkan-sezer-8594b2274/" target="_blank">LinkedIn Profilime Git</a>
+        </div>
+    </div>
 
-        function showPage(pageNumber) {
-            var sections = document.querySelectorAll('section');
-            sections.forEach(function(section) {
-                section.classList.remove('active');
-                if (pageNumber > currentPage) {
-                    section.classList.remove('slideInFromLeft');
-                    section.classList.add('slideInFromRight');
-                } else if (pageNumber < currentPage) {
-                    section.classList.remove('slideInFromRight');
-                    section.classList.add('slideInFromLeft');
-                }
+    <script>
+        function navigateToPage(pageNumber) {
+            const sections = document.querySelectorAll('section');
+            sections.forEach((section) => {
+                section.classList.remove('active', 'slideInFromRight', 'slideInFromLeft');
             });
-            var currentPageSection = document.getElementById('page-' + pageNumber);
-            currentPageSection.classList.add('active');
+
+            const nextPage = document.getElementById(`page-${pageNumber}`);
+            nextPage.classList.add('active', pageNumber > currentPage ? 'slideInFromRight' : 'slideInFromLeft');
+
             currentPage = pageNumber;
         }
 
-        document.getElementById("profile-image").addEventListener("click", function() {
-            currentPage = (currentPage % 6) + 1;
-            showPage(currentPage);
-        });
-
-        function submitForm(event) {
-            event.preventDefault();
-            var feedback = document.getElementById("feedback").value;
-            // Burada geri bildirimi işleyebilirsiniz
-            alert("Geri bildiriminiz alındı: " + feedback);
-        }
-
-        function changeLanguage() {
-            if (language === "tr") {
-                document.documentElement.lang = "en";
-                translateToEnglish();
-                language = "en";
+        function submitComment(pageNumber) {
+            const commentBox = document.getElementById(`comment-${pageNumber}`);
+            const comment = commentBox.value;
+            if (comment) {
+                alert(`Yorumunuz alındı: ${comment}`);
+                commentBox.value = '';
             } else {
-                document.documentElement.lang = "tr";
-                translateToTurkish();
-                language = "tr";
+                alert('Lütfen bir yorum giriniz.');
             }
         }
 
-        function translateToEnglish() {
-            document.getElementById("contact").textContent = "Contact Information";
-            document.getElementById("address").textContent = "Address: Ankara, Turkey";
-            document.getElementById("phone").textContent = "Phone: 0505 494 03 05";
-            document.getElementById("email").textContent = "E-mail: efurkansezer06@gmail.com";
+        let currentPage = 1;
 
-            document.getElementById("education").textContent = "Education";
-            document.getElementById("working").textContent = "Workplaces";
-            document.getElementById("hobbyes").textContent = "Hobbies";
-        }
+        const apiKey = 'YDM2VW4OLGQGJVG0';  // apı anahtarımızı buraya ekliyoruz
+        const symbol = 'FMC';  // 
+        const url = `https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol=${symbol}&interval=5min&apikey=${apiKey}`;
 
-        function translateToTurkish() {
-            document.getElementById("contact").textContent = "İletişim Bilgileri";
-            document.getElementById("address").textContent = "Adres: Ankara, Türkiye";
-            document.getElementById("phone").textContent = "Telefon: 0505 494 03 05";
-            document.getElementById("email").textContent = "E-posta: efurkansezer06@gmail.com";
+        fetch(url)
+            .then(response => response.json())
+            .then(data => {
+                const stockDataElement = document.getElementById('stock-data');
+                const timeSeries = data['Time Series (5min)'];
+                const latestTime = Object.keys(timeSeries)[0];
+                const latestData = timeSeries[latestTime];
 
-            document.getElementById("education").textContent = "Eğitimlerim";
-            document.getElementById("working").textContent = "Çalışma yerleri";
-            document.getElementById("hobbyes").textContent = "Hobilerim";
-       
+                stockDataElement.innerHTML = `
+                    <p><strong><span class="stock-symbol"></span> Sırket adı:</strong> ${data['Meta Data']['2. Symbol']}</p>
+                    <p><strong><span class="stock-symbol"></span> Tarih:</strong> ${latestTime}</p>
+                    <p><strong><span class="stock-symbol"></span> Fiyat:</strong> ${latestData['1. open']}</p>
+                    <p><strong><span class="stock-symbol"></span> Yüksek:</strong> ${latestData['2. high']}</p>
+                    <p><strong><span class="stock-symbol"></span> Düşük:</strong> ${latestData['3. low']}</p>
+                    <p><strong><span class="stock-symbol"></span> Kapanış:</strong> ${latestData['4. close']}</p>
+                    <p><strong><span class="stock-symbol"></span> Hacim:</strong> ${latestData['5. volume']}</p>
+                `;
+            })
+            .catch(error => {
+                const stockDataElement = document.getElementById('stock-data');
+                stockDataElement.innerHTML = '<p>Hisse senedi verileri yüklenemedi.</p>';
+                console.error('Hata:', error);
+            });
+
+        document.getElementById('profile-image').onclick = function() {
+            window.location.href = 'https://www.linkedin.com/in/ey%C3%BCp-furkan-sezer-8594b2274/';
+        };
     </script>
 </body>
 </html>
